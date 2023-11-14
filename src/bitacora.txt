@@ -1,0 +1,16 @@
+ToDoList  - Ideas 
+
+- Que cuando se actualice la lista se guarde
+  en el LocalStorage 
+   y que lo recupere al iniciar
+
+ - Que se pueda borrar la lista por completo 
+
+ - Que se pueda editar una ToDo 
+
+ - Efecto confetti al completar la tarea 
+
+ - Algun efecto para cuando destilda la tarea
+
+
+
