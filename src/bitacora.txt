@@ -12,5 +12,7 @@ ToDoList  - Ideas
 
 [ ] Algun efecto para cuando destilda la tarea
 
+[x] Imput con boton y con enter
+
 
 
