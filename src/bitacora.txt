@@ -1,18 +1,22 @@
 ToDoList  - Ideas 
 
-[ ] Que cuando se actualice la lista se guarde
-  en el LocalStorage 
-   y que lo recupere al iniciar
+[x] Que cuando se actualice la lista se guarde
+    en el LocalStorage y que lo recupere al iniciar
 
-[ ] Que se pueda borrar la lista por completo 
+[x] Que se pueda borrar la lista por completo 
+    Esta seguro de Borrar? swettAlert 
 
-[ ] Que se pueda editar una ToDo 
+[x] Que se pueda poner Completado o No
 
-[ ] Efecto confetti al completar la tarea 
+[] Efecto confetti al completar la tarea 
 
 [ ] Algun efecto para cuando destilda la tarea
 
 [x] Imput con boton y con enter
 
+[ ] Junto a borrar toda la lista que se pueda filtrar
+    los completados y los sin completar 
+
+[x] Mostrar si hay la cantidad de tareas   
 
 

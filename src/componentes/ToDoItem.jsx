@@ -1,39 +1,24 @@
 import React from "react";
-import { Switch } from "@nextui-org/react";
-import { useState, useEffect } from "react";
-import confetti from "canvas-confetti";
+import IconCheck from "./IconCheck";
 
-export default function ToDoItem({ ToDo, index }) {
+export default function ToDoItem({ ToDo, updateTodo }) {
   const { task, completed, id } = ToDo;
 
-  const [switchState, setSwitchState] = useState(false);
-
-  const handleChange = () => {
-    switchState || confetti();
-    setSwitchState((prevState) => !prevState);
-  };
-
   return (
-    <div
-      htmlFor={{ index }}
-      className="flex flex-col  gap-2 justify-center  w-[400px] border-gray-200 border-1   "
-    >
-      <li className=" text-neutral-500 rounded-md flex justify-between items-center  ">
-        <span className="text-start text-neutral-500 p-3 text-md font-bold">
+    <div className="flex flex-col  gap-2 justify-center  w-[400px] border-gray-200 border-1   ">
+      <li className="  rounded-md flex justify-between items-center mx-5 ">
+        <span className="text-start text-gray-800 dark:text-gray-200/90 p-3 text-md font-bold">
           {task}
         </span>
-        <div className="flex items-center">
-          {" "}
-          <Switch
-            id={{ index }}
-            className="text-neutral-500 mr-2 "
-            checked={switchState}
-            onChange={handleChange}
-          ></Switch>
-          <span className="mx-2  text-blue-600 p-3 text-md text-end ">
-            {switchState ? "Completado" : "Sin Completar"}
-          </span>
-        </div>
+
+        <button
+          className={`h-5 w-5 flex-none rounded-full border-2 ${
+            completed ? "grid place-items-center bg-green-500" : "inline-block"
+          }`}
+          onClick={() => updateTodo(id)}
+        >
+          {completed && <IconCheck />}
+        </button>
       </li>
     </div>
   );
